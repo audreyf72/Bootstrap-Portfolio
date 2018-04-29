@@ -25,6 +25,8 @@
         .container{
             position: relative;
             margin-bottom: 60px;
+            width: 100%;
+            max-width: 960px;
         }
 
         .footer {
@@ -36,13 +38,23 @@
         }
 
         .img-thumbnail{
+            width: 100%;
             max-width: 210px;
+        }
+
+        .navwrap{
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            max-width: 960px;
         }
     </style>
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-info border-bottom">
+    <div class="navwrap d-flex justify-content-between">
     <a class="navbar-brand" href="index.html">Audrey Fernandez</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -62,12 +74,13 @@
             </li>
         </ul>
     </div>
+    </div>  
 </nav>  
     
-<div class="container bg-white p-4 ml-auto mr-auto">   
+<div class="container bg-white p-4 ml-auto mr-auto">
+        <h1 class="typeHeader text-info">About Me</h1>   
     <div class="row">
         <div class="col-md-8">
-            <h1 class="typeHeader text-info">About Me</h1>
             <img src="assets/images/profilepic.jpg" alt="Thumbnail image" class="img-thumbnail float-left mt-1 mr-4 mb-4">
             <div class=article>
                     <p>
@@ -127,27 +140,6 @@
         </div>
    
     </div>
-
-<div class="row">
-    <div class="com-md-12 m-3">
-        <div class="card-deck">
-                        <div class="card text-center">
-                          <img class="card-img-top" src="assets/images/lights.jpg" alt="Portfolio Image">
-                          <div class="card-body">
-                            <p class="card-text text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at pharetra ante. Pellentesque lacinia nisi id iaculis tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam eu dolor dictum, dictum magna a, commodo ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                            <a href="portfolio.html" class="btn btn-info">View Portfolio</a>
-                          </div>
-                        </div>
-                        <div class="card text-center">
-                          <img class="card-img-top" src="assets/images/nature.jpg" alt="Contact Image">
-                          <div class="card-body">
-                            <p class="card-text text-left">Duis tortor arcu, accumsan eu velit eu, tempus lobortis elit. In tempor massa a tellus posuere fringilla. Donec purus augue, euismod sit amet sem porta, molestie tincidunt orci. Praesent sit amet diam eu lacus commodo consequat dictum quis elit. Ut vehicula ullamcorper dictum. Donec porta dui ut convallis dapibus. In vel purus urna.</p>
-                            <a href="contact.html" class="btn btn-info">Contact Me</a>
-                          </div>
-                        </div>
-         </div>
-    </div>
-</div>
 
 </div>
 

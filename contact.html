@@ -25,6 +25,8 @@
             .container{
                 position: relative;
                 margin-bottom: 60px;
+                width: 100%;
+                max-width: 960px;
             }
     
             .footer {
@@ -36,34 +38,45 @@
             }
     
             .img-thumbnail{
+                width: 100%;
                 max-width: 210px;
             }
-    </style>
-</head>
+    
+            .navwrap{
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                max-width: 960px;
+            }
+        </style>
+    </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-info border-bottom">
-    <a class="navbar-brand" href="index.html">Audrey Fernandez</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    
-        <ul class="navbar-nav ml-auto navbar-right">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav> 
-
+    <div class="navwrap d-flex justify-content-between">
+        <a class="navbar-brand" href="index.html">Audrey Fernandez</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+                
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                
+            <ul class="navbar-nav ml-auto navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>  
+</nav>  
+                            
 <div class="container">
 <div class="row">
     <div class="col-md-12 bg-white p-4 m-3">   
@@ -86,7 +99,7 @@
             <textarea class="form-control" id="formTextArea" rows="8"></textarea>
     </div>
         
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-info">Submit</button>
     </form>
 </div>  
 </div>
