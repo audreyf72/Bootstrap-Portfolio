@@ -1,22 +1,98 @@
 <!DOCTYPE html>
 <html>
-<html lang="en">
-    
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Bootstrap Portfolio - Contact</title>
- 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Audrey's Bootstrap Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
-</head>
-<body>
-
-
-
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <style>
+            body{
+                background-image:url("assets/images/retina_wood_@2X.png");
+            }
+    
+            .navbar{
+                letter-spacing: 1px;
+                font-weight: 100;
+                margin-bottom: 20px;
+            }
+    
+            .container{
+                position: relative;
+                margin-bottom: 60px;
+            }
+    
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                font-weight: 100;
+            }
+    
+            .img-thumbnail{
+                max-width: 210px;
+            }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-info border-bottom">
+    <a class="navbar-brand" href="index.html">Audrey Fernandez</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    
+        <ul class="navbar-nav ml-auto navbar-right">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav> 
+
+<div class="container">
+<div class="row">
+    <div class="col-md-12 bg-white p-4 m-3">   
+    <h1 class="h1 text-info">Contact</h1>
+<form>
+    <div class="form-group">
+        <label for="formName">Name</label>
+            <input type="name" class="form-control" id="formName" aria-describedby="nameHelp" placeholder="Enter name here">
+            
+    </div>
+
+    <div class="form-group">
+            <label for="formEmail">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email here">
+               
+    </div>
+
+    <div class="form-group">
+            <label for="formTextArea">Message</label>
+            <textarea class="form-control" id="formTextArea" rows="8"></textarea>
+    </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>  
+</div>
+    <footer class="footer footer-fixed-bottom text-center text-white bg-info border-top p-3"><small>&#169;2018 Audrey Fernandez</small>
+    </footer>    
+
+</div>
 </body>
 </html>
